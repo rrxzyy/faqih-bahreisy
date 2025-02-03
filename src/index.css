@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap");
+
+@layer base {
+  html {
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-size: medium;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#textEditor h4 {
+  @apply font-inter dark:text-slate-100 text-slate-900 text-xl font-semibold leading-loose max-md:text-lg max-md:leading-normal !important;
+}
+#textEditor h3 {
+  @apply font-inter dark:text-slate-100 text-slate-900 text-2xl font-semibold leading-loose max-md:text-xl max-md:leading-normal !important;
+}
+#textEditor h2 {
+  @apply font-inter dark:text-slate-100 text-slate-900 text-3xl font-semibold leading-loose max-md:text-2xl max-md:leading-normal !important;
+}
+#textEditor h1 {
+  @apply font-inter dark:text-slate-100 text-slate-900 text-4xl font-semibold leading-loose max-md:text-3xl max-md:leading-normal !important;
+}
+
+#textEditor * {
+  @apply font-gelasio text-3xl leading-10 md:text-5xl;
+}
+
+#textEditor a {
+  @apply text-black underline hover:opacity-50;
+}
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: normal light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  color: black;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.menu-item::before {
+  content: "";
+  width: 2rem;
+  height: 0.3rem;
+  background: linear-gradient(90deg, #19348f 0%, #2f8dff 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.9rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.5s ease;
+}
+
+.menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .primary-btn,
+  .primary-bdr-btn,
+  .secondary-btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.8rem;
+  }
+}
+
+.categories {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: solid 2px #7dd3fc;
+  color: black;
+  background-color: transparent;
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button {
+  background-color: #f9f9f9;
+} */
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "WordPress Developer",
+    "company_name": "Prodi Sistem Informasi UINSA",
+    "icon": "/logo/company/si-uinsa.svg",
+    "date": "Apr 2023 - Jul 2024",
+    "description": [
+      "Designed and developed WordPress site layout and visual aesthetics while ensuring responsive and visually appealing design aligned with Information Systems Study Program identity.",
+      "Optimized user experience by considering information structure and site accessibility.",
+      "Managed images and graphic elements using design software (Adobe Photoshop, Illustrator) for site implementation."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Video Editor & Motion Graphic Designer",
+    "company_name": "Prodi Sistem Informasi UINSA",
+    "icon": "/logo/company/si-uinsa.svg",
+    "date": "Apr 2023 - Jul 2024",
+    "description": [
+      "Edited and created video visual effects using Adobe Premiere Pro and Adobe After Effects to produce engaging visual content.",
+      "Collaborated with creative teams to implement video ideas from storyboard to final project.",
+      "Managed post-production processes, including rendering, video compression, and final file configuration for upload."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "User Interface Designer",
+    "company_name": "Dinas Komunikasi dan Informatika Jember",
+    "icon": "/logo/company/jember.svg",
+    "date": "Jan 2023 - Feb 2023",
+    "description": [
+      "Designed and developed User Interface based on user needs by implementing Design Thinking approach for the Kominfo Jember Employee E-Performance application.",
+      "Conducted User Testing by implementing the System Usability Scale (SUS) method and made improvements based on user feedback.",
+      "Developed Style Guide or Design System for the Kominfo Jember Employee E-Performance application for developers regarding how to use UI elements in the future."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "WordPress Developer",
+    "company_name": "Fakultas Sains dan Teknologi UINSA",
+    "icon": "/logo/company/uinsa.svg",
+    "date": "Apr 2022 - Feb 2023",
+    "description": [
+      " Design and develop the layout and visual aesthetics of the WordPress site and ensure a responsive and visually appealing design.",
+      "Customizing the WordPress theme in accordance with the identity of Facullty of Science and Technology.",
+      "Optimizing the user experience by considering the information structure, and accessibility of the site."
+    ]
+  }
+]
