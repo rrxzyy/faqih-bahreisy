@@ -34,7 +34,6 @@ function GalleryPage() {
     }
 
     const GalleryPostCard = ({ content }) => {
-        console.log(content)
         let { title, banner, publishedAt, gallery_id: id } = content;
         return (
             <div className="w-full" onClick={() => getImg(banner)}>
@@ -61,7 +60,6 @@ function GalleryPage() {
                         <h1 className='text-3xl font-bold md:text-4xl xl:text-5xl' style={{ fontFamily: 'Poppins' }}>GALLERY</h1>
                         <p className='pt-8 pb-1'>Every picture tells a story, and this is my journey.</p>
                         <p>Explore and be inspired by mine.</p>
-                        <p>TES UPDATE GITHBUB REMOTE 2</p>
                     </motion.div>
                 </div>
 
