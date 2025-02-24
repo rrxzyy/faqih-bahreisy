@@ -14,6 +14,22 @@ function DashboardPage() {
         window.location.href = '/login';
     }
 
+    const [totalGallery, getGallery] = useState(null);
+
+    const fetchGallery = () => {
+        axios.get(import.meta.env.VITE_SERVER_DOMAIN + "/gallery-post")
+            .then(({ data }) => {
+                getGallery(data.gallerys.length)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
+
+    useEffect(() => {
+        fetchGallery()
+    }, [])
+
     const dashboardReport = [
         {
             title: "Project",
@@ -46,22 +62,6 @@ function DashboardPage() {
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid rerum animi ducimus aut voluptates.",
         }
     ];
-
-    const [totalGallery, getGallery] = useState(null);
-
-    const fetchGallery = () => {
-        axios.get(import.meta.env.VITE_SERVER_DOMAIN + "/gallery-post")
-            .then(({ data }) => {
-                getGallery(data.gallerys.length)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }
-
-    useEffect(() => {
-        fetchGallery()
-    }, [])
 
 
     return (
