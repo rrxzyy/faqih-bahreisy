@@ -1,0 +1,19 @@
+[
+  { "name": "HTML", "source": "/logo/skill/html5.svg" },
+  { "name": "CSS", "source": "/logo/skill/css3.svg" },
+  { "name": "Javascript", "source": "/logo/skill/javascript.svg" },
+  { "name": "Tailwind CSS", "source": "/logo/skill/tailwindcss.svg" },
+  { "name": "React Js", "source": "/logo/skill/react.svg" },
+
+  { "name": "Vue Js", "source": "/logo/skill/vue.svg" },
+  { "name": "PHP", "source": "/logo/skill/php.svg" },
+  { "name": "Postgre Sql", "source": "/logo/skill/postgresql.svg" },
+  { "name": "Laravel", "source": "/logo/skill/laravel.svg" },
+  { "name": "Python", "source": "/logo/skill/python.svg" },
+
+  { "name": "Jupyter Notebook", "source": "/logo/skill/jupyter.svg" },
+  { "name": "Tensorflow", "source": "/logo/skill/tensorflow.svg" },
+  { "name": "java", "source": "/logo/skill/java.svg" },
+  { "name": "mysql", "source": "/logo/skill/mysql.svg" },
+  { "name": "mongodb", "source": "/logo/skill/mongodb.svg" }
+]

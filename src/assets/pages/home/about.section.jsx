@@ -4,8 +4,7 @@ import { fadeIn } from '../../components/layout/AnimationVariants';
 import experienceData from '/public/content/experience.json';
 const Experience = experienceData;
 
-const FavBar = () => {
-    console.log(Experience);
+const AboutSection = () => {
     return (
         <section className='w-full h-full md:py-8 py-4 bg-gradient-to-r dark:from-gray-950 dark:to-slate-900 from-gray-300 to-slate-200 dark:text-white text-slate-900'>
             <div className="lg:max-w-screen-lg max-w-screen-md flex flex-col lg:flex-row md:mx-auto mt-10 item-center lg:items-start justify-center gap-4 md:px-6 px-4">
@@ -20,12 +19,13 @@ const FavBar = () => {
                 </motion.div>
                 <div>
                     {
-                        Experience.map((exp) => (
+                        Experience.map((exp, index) => (
                             <motion.div
                                 variants={fadeIn('up', 0.25)}
                                 initial="hidden"
                                 whileInView={"show"}
                                 viewport={{ once: false, amount: 0.05 }}
+                                key={index}
                                 className='mt-4 flex flex-row rounded-lg dark:bg-slate-800/20 bg-slate-100/70 px-6 py-10 border-blue-500 border-b-4'>
                                 <div>
                                     <div className='flex md:flex-row flex-col'>
@@ -44,8 +44,8 @@ const FavBar = () => {
                                             </div>
                                             <div>
                                                 <ul className='mt-2 md:mt-5 list-disc ml-5 md:0 space-y-2'>
-                                                    {exp.description.map((point, index) => (
-                                                        <li key={index} className='text-white-100 pl-1 tracking-wider font-light text-sm leading-relaxed text-justify'>
+                                                    {exp.description.map((point, idx) => (
+                                                        <li key={idx} className='text-white-100 pl-1 tracking-wider font-light text-sm leading-relaxed text-justify'>
                                                             {point}
                                                         </li>
                                                     ))}
@@ -80,4 +80,4 @@ const FavBar = () => {
 
 
 
-export default FavBar
+export default AboutSection

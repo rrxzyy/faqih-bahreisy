@@ -101,7 +101,6 @@ const GalleryEditor = () => {
                 toast.dismiss(loadingToast);
                 return toast.error(response.data.error);
             })
-
     }
 
     return (
@@ -135,9 +134,7 @@ const GalleryEditor = () => {
                                     placeholder="Gallery Title" className="w-full min-h-10 dark:bg-slate-900 bg-slate-200 font-semibold leading-tight text-3xl outline-none resize-none placeholder:opacity-90"
                                     onKeyDown={handleTitleKeyDown} onChange={handleTitleKeyChange} />
                                 <hr className="w-full my-2 dark:border-slate-800 border-slate-400" />
-
                             </div>
-
                             <div className="md:flex mt-12 lg:mt-0 lg:justify-normal justify-center">
                                 <Buttons variant='primary' onClick={handleUploadGallery}>Upload</Buttons>
                             </div>

@@ -6,7 +6,7 @@ const LoginPage = () => {
 
     return (
         <Fragment>
-            <AuthLayout title="Login" type="login">
+            <AuthLayout  ayout title="Login" type="login">
                 <UserAuthForm title="Login" type={"login"} />
             </AuthLayout>
         </Fragment>

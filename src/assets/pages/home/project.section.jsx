@@ -4,49 +4,9 @@ import Buttons from '../../components/elements/Buttons/Buttons';
 import Card from '../../components/elements/fragments/Card';
 import { motion } from 'motion/react'
 import { fadeIn } from '../../components/layout/AnimationVariants';
+import projectData from '/public/content/project.json';
+const projects = projectData;
 
-const projects = [
-    {
-        id: 1,
-        image: '/images/project/SatuBenih.png',
-        title: 'Satu Benih Donation',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'January 12, 2023',
-        read_time: '2',
-        link: 'https://faqihbahreisy.notion.site/Satu-Benih-Website-Donation-1511497204ed80079b7bed11edc4ffc6?pvs=25',
-        category: ['Travel', 'Technology', 'Health', 'Food', 'Game']
-    },
-    {
-        id: 2,
-        image: '/images/project/bankoo.png',
-        title: 'Bankoo Mobile App',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'April 20, 2023',
-        read_time: '2',
-        link: 'https://www.notion.so/faqihbahreisy/Bankoo-Virtual-Bank-Mobile-1521497204ed8074b6bdf83f5af69f8a?pvs=4',
-        category: ['Travel', 'Technology', 'Health', 'Food']
-    },
-    {
-        id: 3,
-        image: '/images/project/NatGeoIndonesia.png',
-        title: 'Nat Geo Indonesia',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'April 10, 2023',
-        read_time: '2',
-        link: 'https://www.notion.so/faqihbahreisy/Nat-Geo-Wild-Indonsia-Website-1521497204ed80d9a2afcf1cbf4b3d7b?pvs=4',
-        category: ['Travel', 'Technology', 'Health', 'Food']
-    },
-    {
-        id: 4,
-        image: '/images/project/Talky.png',
-        title: 'Talky Messenger',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'January 12, 2023',
-        read_time: '2',
-        link: 'https://www.notion.so/faqihbahreisy/Talky-Messenger-Mobile-App-1521497204ed800abcc4de49021d9ff0?pvs=4',
-        category: ['Travel', 'Technology', 'Health', 'Food', 'Video']
-    }
-];
 
 const ProjectSection = () => {
     return (

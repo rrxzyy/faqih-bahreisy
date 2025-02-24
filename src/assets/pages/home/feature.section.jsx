@@ -35,7 +35,6 @@ const features = [
 const FeatureSection = () => {
 
     return (
-
         <section className='h-full w-full py-4 bg-gradient-to-r dark:from-gray-950 dark:to-slate-900 from-gray-300 to-slate-200 dark:text-white text-slate-900'>
             <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-normal h-full md:px-2 px-6">
                 <motion.div
@@ -51,8 +50,7 @@ const FeatureSection = () => {
                 </motion.div>
             </div>
             <div className='max-w-screen-xl md:mx-auto mb-8'>
-                <div
-                    className="flex flex-wrap mt-10 items-center justify-center gap-8 md:p-0 p-6">
+                <div className="flex flex-wrap mt-10 items-center justify-center gap-8 md:p-0 p-6">
 
                     {features.map((feature, index) => (
                         <motion.div
@@ -62,8 +60,8 @@ const FeatureSection = () => {
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.25 }}
                             key={index} className="lg:w-1/4 md:w-1/3 w-full rounded-lg dark:bg-slate-800/20 bg-slate-100/70 border-blue-500 border-b-4 p-4 md:p-2 lg:p-1">
-                            <div
-                                className="flex px-8 mt-6">
+
+                            <div className="flex px-8 mt-6">
                                 <div className="flex h-10 w-10 text-xl py-2 rounded-full">
                                     {feature.icon}
                                 </div>

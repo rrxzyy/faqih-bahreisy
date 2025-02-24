@@ -4,44 +4,9 @@ import Card from '../../components/elements/fragments/Card';
 import Buttons from '../../components/elements/Buttons/Buttons';
 import { motion } from 'motion/react'
 import { fadeIn } from '../../components/layout/AnimationVariants';
+import blogData from '/public/content/blog.json';
+const blogs = blogData;
 
-
-const blogs = [
-    {
-        id: 1,
-        image: '/images/arga.png',
-        title: 'Son of Earth',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'January 12, 2023',
-        read_time: '1',
-        category: {
-            name: ['Story', 'Nature', 'Universe']
-        }
-    },
-    {
-        id: 2,
-        image: '/images/aurora.png',
-        title: 'Aurora from West',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'April 20, 2023',
-        read_time: '1',
-        category: {
-            name: ['Story', 'Nature', 'Universe']
-        }
-    },
-    {
-        id: 3,
-        image: '/images/selena.png',
-        title: 'Twilight Saga',
-        //title: 'Selena Admajaya',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci et, quis itaque officiis perspiciatis.',
-        date: 'April 10, 2023',
-        read_time: '1',
-        category: {
-            name: ['Story', 'Nature', 'Universe']
-        }
-    },
-];
 
 const BlogSection = () => {
     return (

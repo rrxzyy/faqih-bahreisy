@@ -1,6 +1,9 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import { fadeIn } from '../../components/layout/AnimationVariants';
+import skillData from '/public/content/skill.json';
+const skills = skillData;
+
 
 const SkillSet = (props) => {
     const { source, alt_name, img_size = 'w-20' } = props;
@@ -37,24 +40,12 @@ const SkillSection = () => {
             </div>
 
             <div className="max-w-screen-lg md:px-12 md:mx-auto md:flex-row h-full mb-6 justify-center grid grid-cols-3 md:grid-cols-5 mx-auto gap md:gap-4 font-semibold text-sm">
-                {/* 1st col */}
-                <SkillSet source="/logo/skill/html5.svg" alt_name="HTML" />
-                <SkillSet source="/logo/skill/css3.svg" alt_name="CSS" />
-                <SkillSet source="/logo/skill/javascript.svg" alt_name="Javascript" />
-                <SkillSet source="/logo/skill/tailwindcss.svg" alt_name="Tailwind CSS" />
-                <SkillSet source="/logo/skill/react.svg" alt_name="React Js" />
-                <SkillSet source="/logo/skill/vue.svg" alt_name="Vue Js" />
-                <SkillSet source="/logo/skill/php.svg" alt_name="PHP" />
-                <SkillSet source="/logo/skill/laravel.svg" alt_name="Laravel" />
-                {/* 2nd col */}
-                <SkillSet source="/logo/skill/mysql.svg" alt_name="MySql" />
-                <SkillSet source="/logo/skill/postgresql.svg" alt_name="Postgre Sql" />
-                {/* 3rd col */}
-                <SkillSet source="/logo/skill/python.svg" alt_name="Python" />
-                <SkillSet source="/logo/skill/jupyter.svg" alt_name="Jupyter Notebook" />
-                <SkillSet source="/logo/skill/tensorflow.svg" alt_name="Tensorflow" />
-                <SkillSet source="/logo/skill/java.svg" alt_name="Java" />
-                <SkillSet source="/logo/skill/mongodb.svg" alt_name="Monggo Db" />
+
+                {skills.map((skill, index) => {
+                    return (
+                        <SkillSet key={index} source={skill.source} alt_name={skill.name} />
+                    )
+                })}
 
             </div>
         </section >

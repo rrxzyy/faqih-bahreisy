@@ -4,7 +4,6 @@ import Footer from '../../components/Footer';
 import { FaTimes } from 'react-icons/fa';
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
-import Gallery from '/public/content/gallery.json';
 import { motion } from 'motion/react'
 import { fadeIn } from '../../components/layout/AnimationVariants';
 
@@ -47,7 +46,6 @@ function GalleryPage() {
         <Fragment>
             <NavBar />
             <Toaster />
-
             <section className='min-h-screen bg-gradient-to-r dark:from-gray-950 dark:to-slate-900 from-gray-300 to-slate-200 dark:text-white text-slate-900 lg:pt-32 pt-24'>
 
                 <div className="max-w-screen-lg mx-auto flex justify-center h-full py-8 md:px-12 px-6">
@@ -72,27 +70,6 @@ function GalleryPage() {
 
                 <div className="max-w-screen-xl items-center justify-center columns-1
                 sm:columns-2 md:columns-3 2xl:columns-4 gap-8 p-8 mx-auto">
-                    {
-                        // gallery.map((img) => (
-                        //     <div key={img.id} className='mx-0 md:mx-8 mb-12 break-inside-avoid cursor-pointer'>
-                        //         <div className="w-full" onClick={() => getImg(img.image)}>
-                        //             <img src={img.image} className='object-cover rounded-lg' />
-                        //         </div>
-                        //     </div>
-                        // ))
-                        // Gallery.map((img) => (
-                        //     <div key={img.id} className='mx-0 md:mx-2 mb-12 break-inside-avoid cursor-pointer'>
-                        //         <motion.div
-                        //             variants={fadeIn('up', 0.25)}
-                        //             initial="hidden"
-                        //             whileInView={"show"}
-                        //             viewport={{ once: false, amount: 0.075 }}
-                        //             className="w-full" onClick={() => getImg(img.name)}>
-                        //             <img src={img.name} className='object-cover rounded-lg' />
-                        //         </motion.div>
-                        //     </div>
-                        // ))
-                    }
                     {gallery == null ? null :
                         gallery.map((image_galley, index) => (
                             <motion.div
