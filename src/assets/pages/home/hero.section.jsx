@@ -47,7 +47,7 @@ const Home = () => {
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.5 }}
                         className='flex md:justify-normal gap-3 py-4'>
-                        <Link to="https://drive.google.com/file/d/13NLZfinaQxnfQk05sfQOFZK0nKVBZ_Ec/view?usp=sharing" target='_blank' rel='noopener noreferrer'>
+                        <Link to="https://drive.google.com/file/d/1DdIQX38b1VQObcbYIbPvbGckHrz7sMAs/view?usp=sharing" target='_blank' rel='noopener noreferrer'>
                             <Buttons variant='primary' classname='flex items-center'>
                                 Download
                                 <FaAngleRight className=' ml-2 -mr-2 text-lg md:text-xl ' />
