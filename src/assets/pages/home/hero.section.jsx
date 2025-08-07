@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiFillInstagram, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaAngleRight } from "react-icons/fa6";
 import Buttons from '../../components/elements/Buttons/Buttons';
 import { motion } from 'motion/react'
@@ -15,7 +14,7 @@ const Home = () => {
                 <div
                     className='px-1 mr-0 md:mr-4 dark:text-white text-slate-900'>
                     <motion.div
-                        className='font-bold text-4xl md:text-5xl lg:text-7xl py-2 md:pb-0 pb-8'>
+                        className=' font-Outfit font-bold text-4xl md:text-5xl lg:text-7xl py-2 md:pb-0 pb-8'>
                         <motion.div
                             variants={fadeIn('down', 0.1)}
                             initial="hidden"
@@ -41,7 +40,7 @@ const Home = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.5 }}
-                        className='text-sm lg:text-base text-justify font-normal pr-0 md:pr-8 md:py-6 py-4'>Fresh graduate of Information Systems with interests in UI/UX Design, Web Development, and some Machine Learning, particularly Artificial Intelligence. In my free time, I focus on Graphic Design and Filmmaking. Currently seeking opportunities to contribute to innovative technology projects.</motion.p>
+                        className='font-inter text-sm lg:text-base text-justify pr-0 md:pr-8 md:py-6 py-4'>Fresh graduate of Information Systems with interests in UI/UX Design, Web Development, and some Machine Learning, particularly Artificial Intelligence. In my free time, I focus on Graphic Design and Filmmaking. Currently seeking opportunities to contribute to innovative technology projects.</motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.25)}
                         initial="hidden"
@@ -54,7 +53,7 @@ const Home = () => {
                                 <FaAngleRight className=' ml-2 -mr-2 text-lg md:text-xl ' />
                             </Buttons>
                         </Link>
-                        <Link to={"mailto:reikun1207@gmail.com"}>
+                        <Link to={"mailto:faqihbahreisy.work@gmail.com"}>
                             <Buttons classname='flex items-center'>
                                 Contact Me
                             </Buttons>

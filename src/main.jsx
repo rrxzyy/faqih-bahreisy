@@ -7,13 +7,11 @@ import ErrorPage from './assets/pages/ErrorPage'
 import DarkModeContextProvider from './context/DarkMode.jsx'
 import UserContextProvider from './context/UserContext.jsx'
 import LoginPage from './assets/pages/auth/login.jsx'
-import RegisterPage from './assets/pages/auth/register.jsx'
 import DashboardPage from './assets/pages/auth/dashboard.jsx'
 import MaintenancePage from './assets/pages/MaintenancePage'
 import GalleryPage from './assets/pages/gallery/gallery.jsx'
 import EditorGalleryPage from './assets/pages/gallery/editor.gallery.jsx'
 import ProjectEditorPage from './assets/pages/project/editor.project.jsx'
-import SupportPage from './assets/pages/support.jsx'
 import PublishProjectEditor from './assets/pages/project/publish.project.editor.jsx'
 
 const router = createBrowserRouter(

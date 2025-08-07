@@ -12,9 +12,9 @@ export default {
     },
     fontFamily: {
       Poppins: ["Poppins"],
-      signature: ["Raleway"],
       inter: ["'Inter'", "sans-serif"],
-      gelasio: ["'Gelasio'", "serif"]
+      gelasio: ["'Gelasio'", "serif"],
+      Outfit: ["'Outfit'", "sans-serif"],
     },
   },
   plugins: [],
