@@ -40,7 +40,7 @@ const Home = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.5 }}
-                        className='font-inter text-sm lg:text-base text-justify pr-0 md:pr-8 md:py-6 py-4'>Fresh graduate of Information Systems with interests in UI/UX Design, Web Development, and some Machine Learning, particularly Artificial Intelligence. In my free time, I focus on Graphic Design and Filmmaking. Currently seeking opportunities to contribute to innovative technology projects.</motion.p>
+                        className='font-inter text-sm lg:text-base text-justify pr-0 md:pr-8 md:py-6 py-4'>Information Systems graduate from Universitas Islam Negeri Sunan Ampel Surabaya with a strong foundation in UI/UX Design, Web Development, Data Science, and Artificial Intelligence. Eager to apply academic knowledge in real-world settings, contribute to innovative technology-driven projects, and continuously develop professional skills in a dynamic and collaborative environment.</motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.25)}
                         initial="hidden"
