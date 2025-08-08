@@ -27,7 +27,7 @@ function Footer() {
                         </Link>
 
                     </div>
-                    <p className='text-center'>Copyright © 2025. Only Rei Reserved.</p>
+                    <p className='text-center'>Copyright © 2025. Faqih Bahreisy Reserved.</p>
                 </motion.div>
             </div>
         </footer >
